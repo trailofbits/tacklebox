@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/trailofbits/tacklebox/badges/gpa.svg)](https://codeclimate.com/github/trailofbits/tacklebox) [![Test Coverage](https://codeclimate.com/github/trailofbits/tacklebox/badges/coverage.svg)](https://codeclimate.com/github/trailofbits/tacklebox)
+
 # tacklebox
 
 * [Homepage](https://github.com/trailofbits/tackle_box)
