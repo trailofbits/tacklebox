@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/trailofbits/tacklebox/badges/gpa.svg)](https://codeclimate.com/github/trailofbits/tacklebox) [![Test Coverage](https://codeclimate.com/github/trailofbits/tacklebox/badges/coverage.svg)](https://codeclimate.com/github/trailofbits/tacklebox)
+[![Code Climate](https://codeclimate.com/github/trailofbits/tacklebox/badges/gpa.svg)](https://codeclimate.com/github/trailofbits/tacklebox) [![Test Coverage](https://codeclimate.com/github/trailofbits/tacklebox/badges/coverage.svg)](https://codeclimate.com/github/trailofbits/tacklebox) [![Build Status](https://travis-ci.org/trailofbits/tacklebox.svg)](https://travis-ci.org/trailofbits/tacklebox)
 
 # tacklebox
 
