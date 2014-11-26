@@ -1,0 +1,6 @@
+require 'tackle_box/person'
+require 'tackle_box/organization'
+require 'tackle_box/attachment'
+require 'tackle_box/link'
+require 'tackle_box/campaign'
+require 'tackle_box/version'

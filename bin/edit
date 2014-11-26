@@ -1,0 +1,74 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'tackle_box/version'
+require 'tackle_box/email/editor'
+
+require 'optparse'
+
+replacements = []
+domains      = []
+
+from      = nil
+from_name = nil
+dry_run   = false
+
+options = OptionParser.new("usage: #{$0} [OPTIONS] EMAIL") do |opts|
+  opts.on('-R','--replace STRING:SUB','Replaces STRING with SUB') do |arg|
+    replacements << arg.split(':',2)
+  end
+
+  opts.on('-f','--from [ADDR]','Replaces the From address with ADDR') do |addr|
+    from = addr || '{{ from.address }}'
+  end
+
+  opts.on('-F','--from-name [NAME]','Replaces the From name') do |name|
+    from_name = name || '{{ from.name }}'
+  end
+
+  opts.on('-D','--domain OLD:NEW','Replaces the OLD domain with NEW') do |arg|
+    domains << arg.split(':',2)
+  end
+
+  opts.on('-d','--dry-run','Do not save the edits') do
+    dry_run = true
+  end
+
+  opts.on('-V','--version','Prints the tacklebox version') do
+    puts TackleBox::VERSION
+    exit
+  end
+
+  opts.on('-h','--help','Prints this message') do
+    puts opts
+    exit
+  end
+end
+
+options.parse!(ARGV)
+
+unless (path = ARGV.first)
+  abort "#{$0}: EMAIL argument not specified"
+end
+
+editor = TackleBox::Email::Editor.new(path)
+
+# always dequote the email
+editor.dequote
+
+editor.replace_to
+editor.replace_to_name
+editor.replace_from(from)           if from
+editor.replace_from_name(from_name) if from_name
+
+domains.each do |(old,new)|
+  editor.replace_domain(old,new)
+end
+
+replacements.each do |(str,sub)|
+  editor.replace(str,sub)
+end
+
+unless dry_run then editor.save
+else                puts editor
+end
