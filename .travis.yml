@@ -10,3 +10,6 @@ rvm:
 matrix:
   allow_failures:
    - rvm: rbx-2
+addons:
+  code_climate:
+    repo_token: 49ec5cc372755982c021444f2876490755eb61ea66c20660a77a9563491b25be
