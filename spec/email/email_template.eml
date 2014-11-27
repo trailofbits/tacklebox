@@ -1,0 +1,19 @@
+Date: Tue, 01 Jul 2014 14:21:08 -0700
+Message-ID: <53b32644bd0dd_b221112ff0516b4@tank.lab.mail>
+To: {{ to.name }} <{{ to.address }}>
+From: {{ from.name }} <{{ from.address }}>
+Subject: Hello, {{ to.name }}
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>test email</title>
+  </head>
+  <body text="#000000" bgcolor="#FFFFFF">
+    Checkout these <a href="{% link %}">nudes</a>.<br>
+  </body>
+</html>
