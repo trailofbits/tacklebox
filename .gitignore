@@ -1,5 +1,6 @@
-Gemfile.lock
-doc/
-pkg/
-vendor/cache/*.gem
+/Gemfile.lock
+/coverage/
+/doc/
+/pkg/
+/vendor/bundle/
 *.eml
