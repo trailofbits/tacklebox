@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'activesupport',  '~> 5.1'
   gem.add_dependency 'shorturl',       '~> 1.0'
   gem.add_dependency 'liquid',         '~> 2.4'
-  gem.add_dependency 'nokogiri',       '~> 1.6'
+  gem.add_dependency 'nokogiri',       '~> 1.8'
   gem.add_dependency 'chars',          '~> 0.2'
   gem.add_dependency 'mail',           '~> 2.5'
 
