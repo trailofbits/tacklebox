@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'activesupport',  '~> 3.2'
+  gem.add_dependency 'activesupport',  '~> 5.1'
   gem.add_dependency 'shorturl',       '~> 1.0'
   gem.add_dependency 'liquid',         '~> 2.4'
   gem.add_dependency 'nokogiri',       '~> 1.6'
