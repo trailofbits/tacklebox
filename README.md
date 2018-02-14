@@ -115,7 +115,7 @@ A phishing toolkit for generating and sending phishing emails.
 * [liquid] ~> 2.4
 * [nokogiri] ~> 1.8
 * [chars] ~> 0.2
-* [mail] ~> 2.5
+* [mail] ~> 2.7
 
 ## Install
 

@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'liquid',         '~> 2.4'
   gem.add_dependency 'nokogiri',       '~> 1.8'
   gem.add_dependency 'chars',          '~> 0.2'
-  gem.add_dependency 'mail',           '~> 2.5'
+  gem.add_dependency 'mail',           '~> 2.7'
 
   gem.add_development_dependency 'bundler', '~> 1.0'
 end
