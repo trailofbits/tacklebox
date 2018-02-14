@@ -95,7 +95,7 @@ A phishing toolkit for generating and sending phishing emails.
     Content-Type: text/html;
      charset=ISO-8895-1
     Content-Transfer-Encoding: 7bit
-    
+
     <html>
       <head>
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
@@ -109,11 +109,11 @@ A phishing toolkit for generating and sending phishing emails.
 
 ## Requirements
 
-* [Ruby] >= 1.9.3
-* [activesupport] ~> 3.2
+* [Ruby] >= 2.2.2
+* [activesupport] ~> 5.1
 * [shorturl] ~> 1.0
 * [liquid] ~> 2.4
-* [nokogiri] ~> 1.6
+* [nokogiri] ~> 1.8
 * [chars] ~> 0.2
 * [mail] ~> 2.5
 
